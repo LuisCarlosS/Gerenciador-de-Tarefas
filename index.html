@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tarefas</h1>
+      <div class="add-tasks">
+        <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+        <button id="addTaskBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></button>
+      </div>    
+      <ul id="taskList" class="sortable">
+      </ul>
+    </div>
+
+    <div id="confirmModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Tem certeza que deseja excluir esta tarefa?</p>
+        <div class="buttons">
+          <button id="cancelBtn">Cancelar</button>
+          <button id="confirmDeleteBtn">Confirmar</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
