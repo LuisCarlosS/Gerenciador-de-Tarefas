@@ -68,10 +68,6 @@ li span {
   margin-top: 1px;
 }
 
-li:hover {
-  background-color: #ffffff;
-}
-
 .container .add-tasks button svg,
 .container li .buttons svg {
   height: 22px;
@@ -198,4 +194,10 @@ button:hover {
   height: 11px;
   background-color: #7e7777;
   border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  li:hover {
+    background-color: #ffffff;
+  }
 }
