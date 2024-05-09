@@ -6,7 +6,6 @@ Um aplicativo simples para o gerenciamento de tarefas diárias.
 - Adicionar tarefas
 - Editar tarefas
 - Excluir tarefas
-- Reordenar tarefas
 - Marcar tarefas como concluídas
 
 ## Como Usar
